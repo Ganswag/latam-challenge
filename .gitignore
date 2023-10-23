@@ -1,4 +1,6 @@
-/venv
+results/
+venv/
 __pycache__/
 
 *.json
+*.txt*
