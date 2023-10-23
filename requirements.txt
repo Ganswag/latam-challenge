@@ -1,1 +1,4 @@
+apache-beam[gcp]>=2.48.0
+emoji>=2.8.0
+notebook>=7.0.6
 memory-profiler==0.61.0
