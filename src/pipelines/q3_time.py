@@ -8,6 +8,16 @@ from src.pipelines.helpers.q2_q3_helpers import parse_element
 
 
 def run(file_path, pipeline_args=None):
+    """Run a defined pipeline to compute the top 10 used emojis and their
+    counter from a file and store the results in the relative path 
+    './results/q3/' with the prefix 'results.txt'.
+    
+    Parameters:
+    file_path (srt): a path where is located the file we want to read
+    pipeline_args (dict): pipeline execution arguments, check 
+    https://cloud.google.com/dataflow/docs/guides/setting-pipeline-options#python_2
+    for more info
+    """
     pipeline_options = PipelineOptions(
         pipeline_args, save_main_session=True,
     )
